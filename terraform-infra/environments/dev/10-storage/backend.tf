@@ -1,3 +1,4 @@
+
 terraform {
   backend "gcs" {
     bucket  = "sai-temp-001" # <--- YOUR BUCKET NAME

@@ -2,7 +2,7 @@
 
 resource "google_compute_instance" "default" {
   name         = var.vm_name
-  machine_type = "e2-micro"
+  machine_type = "e2-medium"
   zone         = var.zone
   project = var.project_id
 
@@ -21,9 +21,10 @@ resource "google_compute_instance" "default" {
     }
   }
 
-  service_account {
+/*  service_account {
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
     email  = var.service_account_email
     scopes = ["cloud-platform"]
   }
+*/
 }

@@ -7,5 +7,5 @@ module "intern_vm" {
 
   # PASTE THE EMAIL FROM STEP 00-IAM HERE
   # This connects Layer 1 (IAM) to Layer 2 (Compute)
-  service_account_email = "saitemp@endtoend-devops.iam.gserviceaccount.com"
+  /* service_account_email = "saitemp@endtoend-devops.iam.gserviceaccount.com" */
 }
